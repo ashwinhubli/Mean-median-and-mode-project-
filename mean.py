@@ -12,6 +12,6 @@ total = 0
 for x in new_data:
     total+= x
     mean = total/n   
-print("mean or average is :"+str(mean))     
+print(f"Mean is -> {mean:2f}")        
 
         
