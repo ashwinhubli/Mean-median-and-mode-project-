@@ -15,18 +15,18 @@ for i in range(len(file_data)):
 
 data = Counter(new_data)
 mode_data_for_range = {
-    "100-110": 0,
-    "110-120": 0,
-    "120-130": 0
+    "100-120": 0,
+    "120-140": 0,
+    "140-160": 0
 }
 
 for weight,occurrence in data.items():
-    if   100<float(weight)<110:
-        mode_data_for_range["100-110"]+=occurrence
-    elif 110<float(weight)<120:
-        mode_data_for_range["110-120"]+=occurrence
-    elif 120<float(weight)<130:
-        mode_data_for_range["120-130"]+=occurrence
+    if   100<float(weight)<120:
+        mode_data_for_range["100-120"]+=occurrence
+    elif 120<float(weight)<140:
+        mode_data_for_range["120-140"]+=occurrence
+    elif 140<float(weight)<160:
+        mode_data_for_range["140-160"]+=occurrence
 mode_range,mode_occurrence = 0,0
 for range,occurrence in  mode_data_for_range.items():
     if occurrence > mode_occurrence:
