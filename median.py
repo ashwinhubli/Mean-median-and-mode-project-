@@ -16,8 +16,11 @@ if n %2 == 0:
 else:
     median = new_data(n//2)
 print(n)
-print("median is"+str(median))        
+print(f"Median is -> {median:2f}")        
     
+
+
+
 
 
 
